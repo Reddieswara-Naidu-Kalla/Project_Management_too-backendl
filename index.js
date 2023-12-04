@@ -3,8 +3,8 @@ const app = express()
 
 app.use(express.json());
 
-const userRoutes = require('./server/routes/userRoutes')
-const signupRoutes = require('./server/routes/signupRoutes')
+const employeeRoutes = require('./server/routes/employeeRoutes')
+const projectRoutes = require('./server/routes/projectRoutes')
 //route to at least one other entity that is NOT user/customer/etc.
 
 //CORS middleware
@@ -15,10 +15,10 @@ app.use(function(req, res, next) {
   next();
 });
 
-app.use('/signin', userRoutes)
-app.use('/signup', signupRoutes)
+app.use('/employee', employeeRoutes)
+app.use('/project', projectRoutes)
 // app.use for routes above
 
-const PORT = process.env.PORT || 3001
+const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => console.log(`Server started on PORT ${PORT}!!!`))
