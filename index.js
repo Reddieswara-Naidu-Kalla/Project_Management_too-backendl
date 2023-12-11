@@ -5,6 +5,7 @@ app.use(express.json());
 
 const employeeRoutes = require('./server/routes/employeeRoutes')
 const projectRoutes = require('./server/routes/projectRoutes')
+const taskRoutes = require('./server/routes/taskRoutes')
 //route to at least one other entity that is NOT user/customer/etc.
 
 //CORS middleware
@@ -17,6 +18,7 @@ app.use(function(req, res, next) {
 
 app.use('/employee', employeeRoutes)
 app.use('/project', projectRoutes)
+app.use('/project', taskRoutes)
 // app.use for routes above
 
 const PORT = process.env.PORT || 3000
