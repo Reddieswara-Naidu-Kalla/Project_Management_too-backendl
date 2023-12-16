@@ -1,12 +1,12 @@
 const express = require('express');
-const User=require('../models/employee');  
+const Employee=require('../models/employee');  
 const router = express.Router();
 
 
 // Get all employees
-router.get('/getAllEmployees', async (req, res) => {
+router.get('/getAllemployees', async (req, res) => {
   try {
-    const employees = await Employee.getEmployees();
+    const employees = await Employee.getAllemployees();
     res.send(employees);
   } catch (err) {
     res.status(401).send({ message: err.message });
@@ -16,8 +16,8 @@ router.get('/getAllEmployees', async (req, res) => {
 // Login post
 router.post('/login', async (req, res) => {
   try {
-    const employee = await Employee.login(req.body);
-    res.send({ ...employee, PASSWORD: undefined });
+    const employees = await Employee.login(req.body);
+    res.send({ ...employees, PASSWORD: undefined });
   } catch (err) {
     res.status(401).send({ message: err.message });
   }
@@ -26,8 +26,8 @@ router.post('/login', async (req, res) => {
 // Register route
 router.post('/register', async (req, res) => {
   try {
-    const employee = await Employee.register(req.body);
-    res.send({ ...employee, PASSWORD: undefined });
+    const employees = await Employee.register(req.body);
+    res.send({ ...employees, PASSWORD: undefined });
   } catch (err) {
     res.status(401).send({ message: err.message });
   }
@@ -36,8 +36,8 @@ router.post('/register', async (req, res) => {
 // Edit route
 router.put('/edit', async (req, res) => {
   try {
-    const employee = await Employee.editEmployee(req.body);
-    res.send({ ...employee, PASSWORD: undefined });
+    const employees = await Employee.editEmployee(req.body);
+    res.send({ ...employees, PASSWORD: undefined });
   } catch (err) {
     res.status(401).send({ message: err.message });
   }

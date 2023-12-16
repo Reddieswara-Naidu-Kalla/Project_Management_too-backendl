@@ -1,0 +1,114 @@
+/*
+the stylings I have used so far are 
+1.font-weight, 2.margin 3. padding , 4. color, 5.text-align, 6.background-color,7.border,8.border-style and more
+*/
+.headings{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 200;
+    color: #a44b1b;
+}
+.footer{
+    margin: auto;
+    text-align: center;
+    margin-top: 10px;
+    font-weight: 200;
+    color: #a44b1b;
+}
+.images{
+    background-position: 0%;
+}
+.container{
+    text-align: center;
+    border-style: groove;
+   margin: auto;
+   margin-top: 100px;
+  height: 240px;
+  width: 30%;
+  background-color: rgb(136, 160, 163);
+  align-items: center;
+  padding-top: 28px;
+  border-radius: 5px;
+
+}
+
+.contain{
+    text-align: center;
+    border-style: groove;
+   margin: auto;
+   margin-top: 100px;
+  height: 170px;
+  width: 30%;
+  background-color: rgb(136, 160, 163);
+  align-items: center;
+  padding-top: 3px;
+  border-radius: 25px;
+
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;   
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    text-align: right;
+}
+
+input[type="email"]{
+    margin-left: 30px;
+    padding: 10px;
+}
+input[type="password"] {
+    margin-left: 35px;
+    padding: 10px;
+}
+
+input[ type="submit"]{
+    border-radius: 5px;
+    background-color: rgb(116, 180, 158);
+    hover
+}
+
+input{
+    text-align: left;
+}
+input[ type="submit"]:hover{
+    background-color: rgb(185, 218, 89);
+}
+
+ul.navbar {
+    list-style-type: none;
+    margin: -1%;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+li.navitem {
+    float: left;
+}
+
+li.navitem a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 125px;
+    text-decoration: none;
+}
+
+/* Change the color of the navigation links when you hover over them */
+li.navitem a:hover {
+    background-color: #555;
+}
+
+.contain1{
+     
+     background-image: url("https://images.pexels.com/photos/3183171/pexels-photo-3183171.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 100%;
+     width: 100%;
+     background-position: center;
+}

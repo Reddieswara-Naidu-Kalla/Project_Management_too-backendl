@@ -7,8 +7,8 @@ async function createTable() {
       EMPLOYEE_ID INT NOT NULL,
       EMPLOYEE_NAME VARCHAR(100),
       PROJECT_ID INT NOT NULL,
-      PRIMARY KEY (TASK_ID),
-      FOREIGN KEY (PROJECT_ID) REFERENCES project(PROJECT_ID)
+      PRIMARY KEY (TASK_ID)
+      
   )`;
   await con.query(sql);
 }

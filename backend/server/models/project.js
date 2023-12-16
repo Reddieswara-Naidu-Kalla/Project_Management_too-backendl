@@ -1,26 +1,5 @@
-// const signup = [
-//   {
-//     projectid: "1",
-//     tittle: "abc",
-//     duration: "10hrs",
-//     userid: "12345",
-//   },
-//   {
-//     projectid: "2",
-//     tittle: "abc",
-//     duration: "10hrs",
-//     userid: "1235",
-//   },
-//   {
-//     projectid: "3",
-//     tittle: "abc",
-//     duration: "10hrs",
-//     userid: "235",
-//   },
-// ];
-// exports.getAllUsers = () => {
-//   return signup;
-// };
+
+
 
 const con = require("./db_connect");
 
@@ -30,9 +9,10 @@ async function createTable() {
       TITLE VARCHAR(100),
       DURATION VARCHAR(100),
       USER_ID INT NOT NULL,
-      PRIMARY KEY (PROJECT_ID),
-      FOREIGN KEY (USER_ID) REFERENCES users(USER_ID)
+      PRIMARY KEY (PROJECT_ID)
+      
   )`;
+  
   await con.query(sql);
 }
 createTable();

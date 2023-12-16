@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="Signup.css">
+    <script src="./signupform.js"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <li class="navitem"><a href="#home">Home</a></li>
+        <li class="navitem"><a href="#about">About</a></li>
+        <li class="navitem"><a href="#Projects">Projects</a></li>
+        <li class="navitem"><a href="#Projects">Resources</a></li>
+        <li class="navitem"><a href="#contact">Live Support</a></li>
+    </div>
+    <div class="headings">
+        <h2>Kalls Project Management Services</h2>
+        <h3>Welcome...!</h3>
+        <h4>Visiting first time please fill up the below</h4>
+    </div>
+    <div class="contain1">
+        <div class="container">
+            <form class="form" id="signupform" >
+                <label for="user_id">User Id</label>
+                <input type="text" id="user_id" name="user_id" autocomplete="off" required dir="ltr" autofocus>
+            </br>
+                <label for="employee_id">Employee Id</label>
+                <input type="text" id="employee_id" name="employee_id" autocomplete="off" required>
+            </br>
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email" autocomplete="off" required dir="ltr">
+            </br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" autocomplete="off" dir="ltr" required>
+            </br>
+                <button type="submit" >SignUp</button>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <h4>Already registered? then <a href="signin_form.html">Sign In</h4>
+    </div>
+</body>
+</html>

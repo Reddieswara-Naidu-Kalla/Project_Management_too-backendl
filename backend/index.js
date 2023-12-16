@@ -18,7 +18,7 @@ app.use(function(req, res, next) {
 
 app.use('/employee', employeeRoutes)
 app.use('/project', projectRoutes)
-app.use('/project', taskRoutes)
+app.use('/task', taskRoutes)
 // app.use for routes above
 
 const PORT = process.env.PORT || 3000
